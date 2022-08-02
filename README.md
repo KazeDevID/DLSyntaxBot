@@ -9,7 +9,7 @@
 
 
 ## Information
-[DEMO BOT]('t.me/DLSyntaxBot')
+
 #### This script is open to anyone! Buying and selling scripts is prohibited!
 
 ## Donate
