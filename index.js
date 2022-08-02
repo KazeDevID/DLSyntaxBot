@@ -204,6 +204,7 @@ syntax.replyWithAudio({source: successs, filename: play.title+".mp3"})
 }
 break
 
+/*
 case prefix+"igstory":
 case prefix+"igs":
 if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
@@ -224,6 +225,7 @@ getBuffer(igs.medias[i].url).then(buff => {
     syntax.replyWithText(err)
 }
 break
+*/
 case prefix+"ig":
 case prefix+"igdl":
 case prefix+"instagram":
