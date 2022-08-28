@@ -120,7 +120,7 @@ case prefix+"tt":
 if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 if (q.includes("tiktok.com") == false) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 try {
-const {nowm} = await xfar.downloader.tiktok(url.tiktok).then(data => {
+const {nowm} = await hxz.ttdownloader(q)
 const buffert = await getBuffer(nowm)
 syntax.replyWithVideo({
     source: buffert,
@@ -129,10 +129,8 @@ syntax.replyWithVideo({
 } catch (err){
     syntax.replyWithText(err)
 }
-console.log(data)
+break
 
-});
-break 
 case prefix+"ytmp4":
 case prefix+"yt":
 if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
@@ -206,7 +204,6 @@ syntax.replyWithAudio({source: successs, filename: play.title+".mp3"})
 }
 break
 
-/*
 case prefix+"igstory":
 case prefix+"igs":
 if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
@@ -227,7 +224,6 @@ getBuffer(igs.medias[i].url).then(buff => {
     syntax.replyWithText(err)
 }
 break
-*/
 case prefix+"ig":
 case prefix+"igdl":
 case prefix+"instagram":
