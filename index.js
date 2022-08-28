@@ -117,7 +117,7 @@ break
 
 case prefix+"tiktok":
 case prefix+"tt":
-if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
+/*if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 if (q.includes("tiktok.com") == false) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 try {
 const {nowm} = await hxz.ttdownloader(q)
@@ -129,8 +129,15 @@ syntax.replyWithVideo({
 } catch (err){
     syntax.replyWithText(err)
 }
-break
+*/
+		
+xa.downloader.tiktok(url.tiktok).then(data => {
 
+  console.log(data)
+
+});
+		
+break 
 case prefix+"ytmp4":
 case prefix+"yt":
 if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
