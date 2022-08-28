@@ -131,7 +131,7 @@ syntax.replyWithVideo({
 }
 */
 		
-xa.downloader.tiktok(url.tiktok).then(data => {
+xfar.downloader.tiktok(url.tiktok).then(data => {
 
   console.log(data)
 
