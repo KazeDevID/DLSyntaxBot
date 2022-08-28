@@ -117,10 +117,10 @@ break
 
 case prefix+"tiktok":
 case prefix+"tt":
-/*if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
+if (!q) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 if (q.includes("tiktok.com") == false) return syntax.reply(eng.false(prefix), {parse_mode: "Markdown"})
 try {
-const {nowm} = await hxz.ttdownloader(q)
+const {nowm} = await xfar.downloader.tiktok(url.tiktok).then(data => {
 const buffert = await getBuffer(nowm)
 syntax.replyWithVideo({
     source: buffert,
@@ -129,14 +129,9 @@ syntax.replyWithVideo({
 } catch (err){
     syntax.replyWithText(err)
 }
-*/
-		
-xfar.downloader.tiktok(url.tiktok).then(data => {
-
-  console.log(data)
+console.log(data)
 
 });
-		
 break 
 case prefix+"ytmp4":
 case prefix+"yt":
@@ -270,4 +265,3 @@ bot.launch()
 // Gatau Buat Apa
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
-
